@@ -1,0 +1,13 @@
+
+import re 
+
+with open('input.txt', 'r') as file:
+    input=file.read()
+
+w= re.findall(r'\b\w*\d\w*\b', input)  #words containing digits
+
+for word in w:
+    print(w)
+    
+if (len(w)==0):
+    print("this paragraph contains no words containing didgits")

@@ -1,0 +1,12 @@
+
+import re 
+s="apple banana orange cucumberwatermelon"
+
+p=r'\.'
+m=re.split(p,s)
+
+print(m)
+
+for i in m:
+    print(i)
+    
