@@ -1,0 +1,10 @@
+
+import re 
+s="apple.banana.orange.cucumberwatermelon"
+
+p=r'\.'
+m=re.sub(p,'-',s)
+
+print(m)
+
+
