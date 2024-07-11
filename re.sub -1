@@ -1,0 +1,7 @@
+
+import re
+s=str(input("Enter a word"))
+p=r'\b\w*\d\w*\b'
+#m=re.findall(p,s) - list
+u=re.sub(p,"_",s)
+print(u)
