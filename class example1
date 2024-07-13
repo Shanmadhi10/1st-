@@ -1,0 +1,11 @@
+
+# class
+class per:
+    def __init__(self,name,age): #underscore twice
+        self.name=name
+        self.age=age
+    
+    def greet(self):
+        print("Hello, my name is",self.name,"I am",self.age,"years old")
+person1=per("dora",5)
+person1.greet() # method
