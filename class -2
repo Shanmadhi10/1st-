@@ -1,0 +1,24 @@
+#Define a class named Book with attributes title, author, and num_pages.
+#The title attribute should store the title of the book as a string, the author attribute should store 
+#the author's name as a string, and the num_pages attribute should store the number of pages in the book as an integer. 
+#Within this class, include a method short_description() that returns a string in the format "'[title]' by [author]". 
+#Additionally, include a method is_lengthy() that returns True if the book has more than 300 pages, 
+#otherwise it should return False.
+
+class Book:
+    def __init__(self,title,author,num_pages):
+        self.title=title
+        self.author=author
+        self.num_pages=num_pages
+    def short_description(self):
+        print(self.title,"by",self.author)
+    def is_lengthy(self):
+        if self.num_pages>=300:
+            print("True")
+        else:
+            print("False")
+
+book1=Book("Bird","abc",222)
+book1.short_description()
+book1.is_lengthy()
+
