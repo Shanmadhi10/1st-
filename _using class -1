@@ -1,0 +1,17 @@
+# class rectangle attri- len n width method- area n peri
+
+class rectangle:
+    def __init__(self,l,w):
+     self.l=l 
+     self.w=w
+    def area(self):
+        print("area = ", self.l*self.w)
+    def peri(self):
+        a=self.l+self.w
+        print("perimeter = ", 2*a)
+        
+rec1=rectangle(10,5)
+rec1.area()
+rec1.peri()
+    
+
